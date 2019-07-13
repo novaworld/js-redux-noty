@@ -1,9 +1,9 @@
 import Noty from './Noty'
 
-export * as actions from './noty.actions'
-export * as selector from './noty.selectors'
-export {default as reducer} from './noty.reducer'
-export {default as noty} from './noty.emitter'
+export * as actions from './reducers/actions'
+export * as selector from './reducers/selectors'
+export {default as reducer} from './reducers/reducer'
+export {default as noty} from './emitter'
 
 export default Noty
 

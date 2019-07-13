@@ -1,6 +1,6 @@
 import EventEmitter from 'eventemitter3'
-import * as acts from './noty.actions'
-import { isPlainObject, isString, clone, includes } from 'lodash'
+import * as acts from './reducers/actions'
+import { isPlainObject, isString, includes } from 'lodash-es'
 
 export const emitter = new EventEmitter()
 

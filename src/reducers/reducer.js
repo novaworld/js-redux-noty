@@ -1,7 +1,7 @@
 import { createReducer } from 'redux-starter-kit'
-import { add, remove, removeAll, reset } from "./noty.actions";
-import { reject } from 'lodash'
-import generateId from 'shortid'
+import { add, remove, removeAll, reset } from "./actions";
+import { reject } from 'lodash-es'
+import { uniqid } from '@ttungbmt/utils'
 
 export const initialState = {
     items: [],
@@ -9,7 +9,7 @@ export const initialState = {
 
 export default createReducer(initialState, {
     [add]: (state, {payload}) => {
-        state.items.push({id: generateId(), options: payload})
+        state.items.push({id: uniqid(), options: payload})
     },
     [remove]: (state, {payload: id}) => {
         reject(state.items, {id})
