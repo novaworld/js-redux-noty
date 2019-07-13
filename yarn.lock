@@ -675,6 +675,13 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@ttungbmt/module-config@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@ttungbmt/module-config/-/module-config-0.0.2.tgz#d6d8e6f89579ede1d023426ca7c88376a14fbc09"
+  integrity sha512-oH+BahtuFlH7l02FXGtLoxomouQLzPA/uHz4HV8o10dtpWOlwa9xTS7Gdh59xXiKTlmvURHGMjaM+84quEfxgA==
+  dependencies:
+    lodash "^4.17.14"
+
 "@types/estree@0.0.39":
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
@@ -1149,7 +1156,7 @@ json5@^2.1.0:
   dependencies:
     minimist "^1.2.0"
 
-lodash@^4.17.11:
+lodash@^4.17.11, lodash@^4.17.14:
   version "4.17.14"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
   integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==

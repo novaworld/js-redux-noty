@@ -1,13 +1,17 @@
 import pkg from './package.json'
 import { rollup } from "@ttungbmt/module-config";
 
-const input = './src/index'
+const input = './src/index.js'
+
+rollup.setConfig({
+    pkg
+})
 
 export default [
     rollup(input, [
-        {file: pkg.module, format: 'es'},
-        {file: pkg.main, format: 'umd', name: 'reduxNoty'},
-    ], {
-        pkg
-    }),
-]
+        [pkg.main, 'cjs'],
+        [pkg.module, 'es'],
+        [pkg.unpkg, 'umd', 'reduxNoty'],
+    ]),
+    rollup(input, [pkg.unpkg, 'umd', 'reduxNoty'], {minify: true}),
+];
