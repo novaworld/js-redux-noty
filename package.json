@@ -1,0 +1,42 @@
+{
+  "name": "@ttungbmt/redux-noty",
+  "version": "0.0.1",
+  "description": "Redux notification",
+  "repository": "https://github.com/novaworld/js-redux-noty",
+  "main": "dist/redux-noty.cjs.js",
+  "module": "dist/redux-noty.es.js",
+  "unpkg": "dist/redux-noty.umd.js",
+  "license": "MIT",
+  "keywords": [
+    "noty",
+    "react",
+    "redux",
+    "notification"
+  ],
+  "authors": "Truong Thanh Tung <ttungbmt@gmail.com> (https://github.com/ttungbmt)",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "dependencies": {
+    "rollup-plugin-json": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-external-helpers": "^7.2.0",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/preset-env": "^7.5.4",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.1",
+    "rollup-plugin-filesize": "^6.1.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-progress": "^1.1.1",
+    "rollup-plugin-terser": "^5.1.1"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false
+}
